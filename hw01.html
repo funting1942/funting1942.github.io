@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Homework</title>
+    <style>
+     body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: black;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index:1;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .dropdown-btn{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        transition: 0.3s;
+    }
+    .dropdown-btn:hover{
+        color: #f1f1f1;
+    }
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+    .active {
+        background-color: green;
+        color: white;
+    }
+
+
+    .navbar .right {
+        float: right;
+        color: white;
+    }
+    .navbar span {
+        padding: 14px 16px;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+        #main {
+            padding-top: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 100px;
+        }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+  <a href="index.html">@WUUSUPPZ</a>
+   <div id="menu" class="right">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;  </span>
+</div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+   </a>
+   <a href="profile.html" >Profile
+   </a>
+   <button class="dropdown-btn">Works
+    <i class="fa fa-caret-down"></i>
+   </button>
+    <div class="dropdown-container">
+     <a href="hw01.html" >과제01</a>
+     <a href="hw02.html" >과제02</a>
+     <a href="hw03.html" >과제03</a>
+     <a href="hw04.html" >과제04</a>
+     <a href="hw05.html" >과제05</a>
+    </div>
+    <a href="#">Portfolio</a>
+</div>
+   
+   <div id="main"><h1>1. 웹표준</h1>
+    <hr>
+    <h3>정의</h3>
+    <p><strong>월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어.</strong> </p>
+    <p>보통 인터넷을 이용할 때 같은 웹페이지라면 어느 브라우저를 사용하는지 여부에 상관없이 그 웹페이지가 똑같이 보이고 정상적으로 작동해야 함을 의미한다.
+    </p>
+    <br>
+    <h3>웹표준의 중요성</h3>
+    <p>산업표준이 왜 존재하는지, 도량형이 왜 존재하는지 생각해 보면 이유가 명확해진다. 산업현장에서 부품들의 <mark><ins>표준화가 돼 있지 않으면 업체마다 서로 호환이 되지 않고</ins></mark>,<br> 같은 업체에서 생산하는 부품도 품질보장이 되질 않을 것이다. <b>웹 환경은 본질적으로 '통신'이기 때문에 더욱 더 표준화가 중요해진다.</b> 비표준 '부품'이야 자기네 제품에만<br> 독점적으로 사용할 거라면 크게 상관없지만 웹은 누가 어떤 장치를 어떤 방식으로 사용할지를 제공자가 통제할 수 없기 때문이다. 인터넷 그 자체가 <em>크로스 플랫폼</em>인 이유.</p>
+    <br>
+    <h1>2. 웹 접근성</h1>
+    <hr>
+    <h3>정의</h3>
+    
+    <p>W3C의 정의에 의하면 <em><mark>웹 표준성은 접근성, 사생활 보호, 보안, 국제화의 측면을 고려해야 한다. 이 중에 접근성을 흔히 '웹접근성'</mark></em>이라고 하고웹 표준성과 함께 많이 <br>언급되는 개념이다. </p>
+    
+    <h3>필요성</h3>
+    
+    <p>예를 들어 시각장애인의 경우 화면을 눈으로 볼 수 없기 때문에 그렇지 않은 사람과 같은 방식으로는 웹페이지를 이용할 수 없다. 그래서 '스크린 리더'라는 별도의<br> 소프트웨어를 컴퓨터에 설치해서 인터넷을 이용한다. 스크린 리더는 모니터에 비춰지는 내용을 인식해서 음성, 점자로 출력해주는 역할을 한다. 예를 들어 화면에<br> '메뉴'라는 텍스트가 있으면 이를 인식해서 '메뉴'라는 음성이 나오는 방식이다. 시각장애인은 이를 이용해 눈으로 보는 대신 소리로 들으면서 웹페이지에 담긴 정보를<br> 이해할 수 있다. 하지만 스크린 리더는 소프트웨어에 불과하므로 스스로 웹페이지의 내용을 분석해서 이건 무슨 내용이고 저건 무슨 내용이다라는 걸 이해할 수 없다.<br> 특히 이미지의 경우가 그렇다. '메뉴'라고 텍스트로 집어 넣지 않고 메뉴라고 그려진 이미지를 사용하면 비 시각 장애인의 눈에는 똑같이 메뉴라고 보이지만 소프트웨어<br> 입장에서는 그저 이미지일 뿐이다. 그 이미지 안에 그려진 내용을 인식하는 것은 불가능하다. 그래서 되도록이면 이미지를 사용하지 말고 소스 코드에 내용을 그대로<br> 담는 것이 권장되며, 부득이하게 이미지를 사용할 경우 반드시 이 이미지가 어떤 내용인지 설명을 추가해야 한다.</p>
+    
+    <p>네이버에서 '널리'라는 프로젝트의 일환으로 네이버 사옥 그린팩토리 2층에 '웹접근성 체험 부스'를 오픈했다. 이 곳에 방문하면 누구나 무료로 실제 장애가 있는 경우 어떤 식으로<br> 인터넷을 이용하는지 직접 체험해 볼 수 있다고 한다. <del>정작 본인들은 일부 서비스가 비표준인 건 함정</del></p>
+    
+    <hr>
+    <br>
+    <p>출처: https://namu.wiki/w/%EC%9B%B9%20%ED%91%9C%EC%A4%80</p></div>
+    
+    
+    
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
